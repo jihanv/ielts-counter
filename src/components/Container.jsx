@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Stats from "./Stats";
 import Textarea from "./Textarea";
 import { TASK_1, TASK_2 } from "../lib/constants";
@@ -10,6 +10,17 @@ export default function Container() {
   const numberOfCharacters = text.length;
   const numberOfWords = text.split(/\s/).filter((word) => word !== "").length;
 
+  useEffect(() => {
+    const handleClose = (event) => {
+      event.preventDefault();
+      event.returnValue = "Are you sure?";
+    };
+    window.addEventListener("beforeunload", handleClose);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleClose);
+    };
+  }, [text]);
   return (
     <main className="container">
       <Textarea text={text} setText={setText} />
