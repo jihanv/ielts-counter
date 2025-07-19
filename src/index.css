@@ -166,3 +166,15 @@ body {
     align-items: center;
   }
 }
+
+.reset-btn {
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.4s;
+}
+
+.reset-btn-icon {
+  color: #1d2507;
+  height: 40px;
+  width: 40px;
+}

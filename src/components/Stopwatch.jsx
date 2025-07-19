@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import ResetButton from "./ResetButton";
+import StartButton from "./StartButton";
+import Pause from "./Pause";
 
 export default function Stopwatch() {
   const [time, setTime] = useState(0); // time in milliseconds
@@ -29,9 +32,11 @@ export default function Stopwatch() {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1 className="stat__number">{formatTime(time)}</h1>
-      <button onClick={() => setIsRunning(true)}>Start</button>
-      <button onClick={() => setIsRunning(false)}>Stop</button>
-      <button onClick={() => setTime(0)}>Reset</button>
+      <StartButton setIsRunning={setIsRunning} />
+      {/* <button onClick={() => setIsRunning(true)}>Start</button> */}
+      {/* <button onClick={() => setIsRunning(false)}>Stop</button> */}
+      <Pause setIsRunning={setIsRunning} />
+      <ResetButton setTime={setTime} />
     </div>
   );
 }
