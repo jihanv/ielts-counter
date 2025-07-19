@@ -28,7 +28,7 @@ export default function Stopwatch() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>{formatTime(time)}</h1>
+      <h1 className="stat__number">{formatTime(time)}</h1>
       <button onClick={() => setIsRunning(true)}>Start</button>
       <button onClick={() => setIsRunning(false)}>Stop</button>
       <button onClick={() => setTime(0)}>Reset</button>
