@@ -30,13 +30,13 @@ export default function Stopwatch() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div className="stopwatch">
       <h1 className="stat__number">{formatTime(time)}</h1>
-      <StartButton setIsRunning={setIsRunning} />
-      {/* <button onClick={() => setIsRunning(true)}>Start</button> */}
-      {/* <button onClick={() => setIsRunning(false)}>Stop</button> */}
-      <Pause setIsRunning={setIsRunning} />
-      <ResetButton setTime={setTime} />
+      <div className="btn-container">
+        <StartButton setIsRunning={setIsRunning} />
+        <Pause setIsRunning={setIsRunning} />
+        <ResetButton setTime={setTime} />
+      </div>
     </div>
   );
 }

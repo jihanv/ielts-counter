@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Stats from "./Stats";
 import Textarea from "./Textarea";
 import { TASK_1, TASK_2 } from "../lib/constants";
+import Stopwatch from "./Stopwatch";
 
 export default function Container() {
   const [text, setText] = useState("");
@@ -23,13 +24,14 @@ export default function Container() {
   }, [text]);
   return (
     <main className="container">
-      <Textarea text={text} setText={setText} />
       <Stats
         task1={task1}
         task2={task2}
         numberOfWords={numberOfWords}
         numberOfCharacters={numberOfCharacters}
       />
+      <Textarea text={text} setText={setText} />
+      <Stopwatch />
     </main>
   );
 }
