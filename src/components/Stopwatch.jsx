@@ -31,7 +31,7 @@ export default function Stopwatch() {
 
   return (
     <div className="stopwatch">
-      <h1 className="stat__number">{formatTime(time)}</h1>
+      <h1 className="stat__number digits">{formatTime(time)}</h1>
       <div className="btn-container">
         <StartButton setIsRunning={setIsRunning} />
         <Pause setIsRunning={setIsRunning} />

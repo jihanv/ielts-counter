@@ -6,10 +6,10 @@ import Stopwatch from "./Stopwatch";
 
 export default function Container() {
   const [text, setText] = useState("");
-  const task1 = TASK_1 - text.length;
-  const task2 = TASK_2 - text.length;
   const numberOfCharacters = text.length;
   const numberOfWords = text.split(/\s/).filter((word) => word !== "").length;
+  const task1 = TASK_1 - numberOfWords;
+  const task2 = TASK_2 - numberOfWords;
 
   useEffect(() => {
     const handleClose = (event) => {

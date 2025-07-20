@@ -36,7 +36,7 @@ body {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.92);
-  margin-top: 75px;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -45,12 +45,12 @@ body {
 }
 
 .container {
-  width: 1050px;
-  height: 520px;
+  width: 90vw;
+  height: 80vh;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 55px;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -100,14 +100,14 @@ body {
   align-items: center;
 }
 
-.stat:nth-child(1),
+/* .stat:nth-child(1),
 .stat:nth-child(2) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
+} */
 
 .stat:nth-child(2),
-.stat:nth-child(4) {
-  border-left: 1px solid rgba(0, 0, 0, 0.08);
+.stat:nth-child(3) {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .stat__number {
@@ -151,11 +151,11 @@ body {
     padding: 15px 10px;
   }
 
-  .stat:nth-child(1),
+  /* .stat:nth-child(1),
   .stat:nth-child(2),
   .stat:nth-child(4) {
     border: none;
-  }
+  } */
 
   .stat__number {
     font-size: 20px;
@@ -183,13 +183,21 @@ button {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.4s;
-  border: 0.5px solid white;
+  border-right: 0.2px solid rgba(255, 255, 255, 0.5);
+}
+
+.reset-btn:last-child {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.4s;
+  border-right: 0px;
 }
 
 .reset-btn-icon {
   color: white;
   height: 40px;
   width: 40px;
+  margin: 0.75rem;
 }
 
 .reset-btn:hover,
@@ -212,4 +220,11 @@ button {
 }
 .btn-container > * {
   flex: 1;
+}
+
+.digits {
+  letter-spacing: 10px; /* Adjust the value to your preference */
+  width: 12ch;
+  margin: 1rem;
+  font-size: 50px;
 }

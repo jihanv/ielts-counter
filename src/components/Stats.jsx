@@ -1,10 +1,8 @@
-import Stopwatch from "./Stopwatch";
-
 export default function Stats({ task1, task2, numberOfWords }) {
   return (
     <section className="stats">
-      {/* <Stat number={task1} label="Task 1" />
-      <Stat number={task2} label="Task 2" /> */}
+      <Stat number={task1} label="Task 1" />
+      <Stat number={task2} label="Task 2" />
       <Stat number={numberOfWords} label="Words" />
     </section>
   );
