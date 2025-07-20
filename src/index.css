@@ -62,12 +62,13 @@ body {
   flex: 2;
   font: inherit;
   padding: 30px 40px;
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 .textarea::placeholder {
   font-weight: 500;
   color: #959c9f;
+  font-size: 1.5rem;
 }
 
 .textarea > textarea {
@@ -113,7 +114,7 @@ body {
 .stat__number {
   color: #4d5457;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
@@ -211,7 +212,6 @@ button {
   background-color: #f1f6f8;
   justify: center;
   align-items: center;
-  /* margin: 1rem; */
 }
 
 .btn-container {
@@ -226,5 +226,20 @@ button {
   letter-spacing: 10px; /* Adjust the value to your preference */
   width: 12ch;
   margin: 1rem;
-  font-size: 50px;
+  font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+  .stat:nth-child(2),
+  .stat:nth-child(3) {
+    border-left: none;
+  }
+  .stat:nth-child(1) {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .stat:nth-child(1),
+  .stat:nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
 }
