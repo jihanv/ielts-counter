@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Warning from "./Warning";
+import Stopwatch from "./Stopwatch";
 
 export default function Textarea({ text, setText }) {
   const [warningText, setWarningText] = useState("");
@@ -18,14 +19,18 @@ export default function Textarea({ text, setText }) {
   };
 
   return (
-    <div className="textarea">
-      <textarea
-        value={text}
-        onChange={handleChange}
-        placeholder="Enter your text"
-        spellCheck="false"
-      />
-      {warningText !== "" ? <Warning text={warningText} /> : null}
-    </div>
+    <>
+      {" "}
+      <div className="textarea">
+        <textarea
+          value={text}
+          onChange={handleChange}
+          placeholder="Enter your text"
+          spellCheck="false"
+        />
+        {warningText !== "" ? <Warning text={warningText} /> : null}
+      </div>
+      <Stopwatch setText={setText} text={text} />
+    </>
   );
 }

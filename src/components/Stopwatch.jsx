@@ -2,8 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import ResetButton from "./ResetButton";
 import StartButton from "./StartButton";
 import Pause from "./Pause";
+import ClearButton from "./ClearButton";
+import CopyButton from "./CopyButton";
 
-export default function Stopwatch() {
+export default function Stopwatch({ setText, text }) {
   const [time, setTime] = useState(0); // time in milliseconds
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef(null);
@@ -36,6 +38,8 @@ export default function Stopwatch() {
         <StartButton setIsRunning={setIsRunning} />
         <Pause setIsRunning={setIsRunning} />
         <ResetButton setTime={setTime} />
+        <ClearButton setText={setText} />
+        <CopyButton text={text} />
       </div>
     </div>
   );

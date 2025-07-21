@@ -181,7 +181,18 @@ button {
   transition: all 0.4s;
   border-right: 0.2px solid rgba(255, 255, 255, 0.5);
 }
+.copy-icon,
+.copy-text {
+  position: absolute;
+  transition: opacity 0.75s ease;
+  opacity: 0;
+  pointer-events: none;
+}
 
+.copy-icon.fade-in,
+.copy-text.fade-in {
+  opacity: 1;
+}
 .reset-btn:last-child {
   cursor: pointer;
   opacity: 0.5;
@@ -218,8 +229,8 @@ button {
 }
 
 .digits {
-  letter-spacing: 10px; /* Adjust the value to your preference */
-  width: 12ch;
+  font-family: monospace;
+  width: auto;
   margin: 1rem;
   font-size: 3rem;
 }

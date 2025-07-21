@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <small>
-        <b>Version 1.0</b>
+        <b>Version 1.1</b>
       </small>
     </footer>
   );
