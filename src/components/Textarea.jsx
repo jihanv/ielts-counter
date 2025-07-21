@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Warning from "./Warning";
 
 export default function Textarea({ text, setText }) {
@@ -14,8 +14,9 @@ export default function Textarea({ text, setText }) {
     } else {
       setWarningText("");
     }
-    setText(newText);
+    setText(() => newText);
   };
+
   return (
     <div className="textarea">
       <textarea

@@ -5,22 +5,26 @@ import { TASK_1, TASK_2 } from "../lib/constants";
 import Stopwatch from "./Stopwatch";
 
 export default function Container() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState(localStorage.getItem("text") || "");
   const numberOfCharacters = text.length;
   const numberOfWords = text.split(/\s/).filter((word) => word !== "").length;
   const task1 = TASK_1 - numberOfWords;
   const task2 = TASK_2 - numberOfWords;
 
-  useEffect(() => {
-    const handleClose = (event) => {
-      event.preventDefault();
-      event.returnValue = "Are you sure?";
-    };
-    window.addEventListener("beforeunload", handleClose);
+  // useEffect(() => {
+  //   const handleClose = (event) => {
+  //     event.preventDefault();
+  //     event.returnValue = "Are you sure?";
+  //   };
+  //   window.addEventListener("beforeunload", handleClose);
 
-    return () => {
-      window.removeEventListener("beforeunload", handleClose);
-    };
+  //   return () => {
+  //     window.removeEventListener("beforeunload", handleClose);
+  //   };
+  // }, [text]);
+
+  useEffect(() => {
+    localStorage.setItem("text", text);
   }, [text]);
   return (
     <main className="container">

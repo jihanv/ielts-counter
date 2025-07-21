@@ -101,11 +101,6 @@ body {
   align-items: center;
 }
 
-/* .stat:nth-child(1),
-.stat:nth-child(2) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-} */
-
 .stat:nth-child(2),
 .stat:nth-child(3) {
   border-left: 1px solid rgba(0, 0, 0, 0.3);
