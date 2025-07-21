@@ -28,7 +28,7 @@ body {
       rgba(101, 0, 163, 0.9),
       rgba(24, 120, 175, 0.9)
     ),
-    url("https://bytegrad.com/course-assets/images/rn-image-1.png");
+    url("/rn-image-1.png");
 }
 
 .first-heading {

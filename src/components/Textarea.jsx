@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Warning from "./Warning";
 
 export default function Textarea({ text, setText }) {
