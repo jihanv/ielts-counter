@@ -6,8 +6,8 @@ export default function ResetButton({ setTime }) {
     event.currentTarget.blur();
   };
   return (
-    <button className="reset-btn" onClick={handleClick}>
-      <ResetIcon className="reset-btn-icon" />
+    <button className="app-btn" onClick={handleClick}>
+      <ResetIcon className="app-btn-icon" />
     </button>
   );
 }

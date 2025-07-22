@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Warning from "./Warning";
-import Stopwatch from "./Stopwatch";
+import ButtonSection from "./ButtonSection";
 
 export default function Textarea({ text, setText }) {
   const [warningText, setWarningText] = useState("");
@@ -30,7 +30,7 @@ export default function Textarea({ text, setText }) {
         />
         {warningText !== "" ? <Warning text={warningText} /> : null}
       </div>
-      <Stopwatch setText={setText} text={text} />
+      <ButtonSection setText={setText} text={text} />
     </>
   );
 }

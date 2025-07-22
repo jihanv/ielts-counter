@@ -147,12 +147,6 @@ body {
     padding: 15px 10px;
   }
 
-  /* .stat:nth-child(1),
-  .stat:nth-child(2),
-  .stat:nth-child(4) {
-    border: none;
-  } */
-
   .stat__number {
     font-size: 20px;
   }
@@ -175,7 +169,7 @@ button {
   background-color: black;
 }
 
-.reset-btn {
+.app-btn {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.4s;
@@ -193,22 +187,22 @@ button {
 .copy-text.fade-in {
   opacity: 1;
 }
-.reset-btn:last-child {
+.app-btn:last-child {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.4s;
   border-right: 0px;
 }
 
-.reset-btn-icon {
+.app-btn-icon {
   color: white;
   height: 40px;
   width: 40px;
   margin: 0.75rem;
 }
 
-.reset-btn:hover,
-.reset-btn:focus {
+.app-btn:hover,
+.app-btn:focus {
   opacity: 0.7;
 }
 
@@ -235,7 +229,7 @@ button {
   font-size: 3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .stat:nth-child(2),
   .stat:nth-child(3) {
     border-left: none;

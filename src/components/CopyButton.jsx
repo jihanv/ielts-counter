@@ -16,15 +16,15 @@ export default function CopyButton({ text }) {
   };
   return (
     <button
-      className="reset-btn"
+      className="app-btn"
       onClick={handleClick}
       aria-label="Copy to clipboard"
     >
       <span className={`copy-icon ${copied ? "fade-out" : "fade-in"}`}>
-        <CopyIcon className="reset-btn-icon" />
+        <CopyIcon className="app-btn-icon" />
       </span>
       <span className={`copy-text ${copied ? "fade-in" : "fade-out"}`}>
-        <CheckIcon className="reset-btn-icon" />
+        <CheckIcon className="app-btn-icon" />
       </span>
     </button>
   );

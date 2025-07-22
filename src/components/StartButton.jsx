@@ -6,8 +6,8 @@ export default function StartButton({ setIsRunning }) {
     event.currentTarget.blur();
   };
   return (
-    <button className="reset-btn" onClick={handleClick}>
-      <PlayIcon className="reset-btn-icon" />
+    <button className="app-btn" onClick={handleClick}>
+      <PlayIcon className="app-btn-icon" />
     </button>
   );
 }

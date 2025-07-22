@@ -10,8 +10,8 @@ export default function ClearButton({ setText }) {
     event.currentTarget.blur();
   };
   return (
-    <button className="reset-btn" onClick={handleClick}>
-      <TrashIcon className="reset-btn-icon" />
+    <button className="app-btn" onClick={handleClick}>
+      <TrashIcon className="app-btn-icon" />
     </button>
   );
 }

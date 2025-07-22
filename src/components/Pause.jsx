@@ -6,8 +6,8 @@ export default function Pause({ setIsRunning }) {
     event.currentTarget.blur();
   };
   return (
-    <button className="reset-btn" onClick={handleClick}>
-      <PauseIcon className="reset-btn-icon" />
+    <button className="app-btn" onClick={handleClick}>
+      <PauseIcon className="app-btn-icon" />
     </button>
   );
 }
