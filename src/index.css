@@ -62,7 +62,7 @@ body {
   flex: 2;
   font: inherit;
   padding: 30px 40px;
-  font-size: 1.5rem;
+  font-size: 1.2em;
 }
 
 .textarea::placeholder {
@@ -118,7 +118,7 @@ body {
 }
 
 .second-heading {
-  font-size: 14px;
+  font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -207,19 +207,20 @@ button {
 @media (max-width: 2050px) {
   .container {
     width: 70vw;
+    height: 70vh;
     flex-direction: column;
   }
 
   .first-heading {
-    font-size: 7vw;
+    font-size: 5vw;
   }
 
   .stat {
-    padding: 15px 10px;
+    padding: 0.4em;
   }
 
   .stat__number {
-    font-size: 20px;
+    font-size: 1.5em;
   }
 
   .footer {
