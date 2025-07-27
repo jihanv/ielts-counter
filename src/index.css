@@ -230,7 +230,7 @@ button {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 665px) {
   .stat:nth-child(2),
   .stat:nth-child(3) {
     border-left: none;
