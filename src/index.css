@@ -36,7 +36,7 @@ body {
   top: 50%;
   left: 0;
   transform: translate(-57%, -50%) rotate(-37deg); /* pop out left & center vertically */
-  width: 600px; /* or a percentage like 30% */
+  width: 70%; /* or a percentage like 30% */
   aspect-ratio: 16 / 9;
   background-image: url("/jihan-apple.svg");
   background-repeat: no-repeat;
