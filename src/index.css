@@ -31,6 +31,21 @@ body {
     url("/rn-image-1.png");
 }
 
+.apple {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-57%, -50%) rotate(-37deg); /* pop out left & center vertically */
+  width: 600px; /* or a percentage like 30% */
+  aspect-ratio: 16 / 9;
+  background-image: url("/jihan-apple.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: -1; /* behind content */
+  pointer-events: none; /* avoid blocking clicks */
+}
+
 .first-heading {
   font-size: 65px;
   letter-spacing: 5px;
@@ -55,6 +70,7 @@ body {
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  overflow: visible;
 }
 
 .textarea {

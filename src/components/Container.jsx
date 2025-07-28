@@ -22,6 +22,7 @@ export default function Container() {
         numberOfCharacters={numberOfCharacters}
       />
       <Textarea text={text} setText={setText} />
+      <div className="apple"></div>
     </main>
   );
 }
