@@ -23,12 +23,7 @@ body {
   z-index: -1;
   height: 254px;
   width: 100%;
-  background-image: linear-gradient(
-      to right,
-      rgba(101, 0, 163, 0.9),
-      rgba(24, 120, 175, 0.9)
-    ),
-    url("/rn-image-1.png");
+  background-color: #a71b1b;
 }
 
 .apple {
